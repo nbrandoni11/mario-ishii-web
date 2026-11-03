@@ -34,3 +34,14 @@ body:has(dialog[open]){overflow:hidden}
 @media(max-width:359px){
 .profile-card{height:340px;min-height:340px}.profile-identity{padding:25px 19px 0}.profile-identity h1{font-size:34px}.profile-identity .honoris{font-size:10px;margin-bottom:15px}.profile-summary{left:19px;top:151px;width:165px}.profile-summary .mobile-primary-role{font-size:11px;max-width:160px;line-height:1.55;margin-bottom:18px}.portrait-wrap{right:-26%;height:80%}.light-button{font-size:10px;padding:10px 12px}.quick-actions>a{font-size:12px;padding:14px 11px;gap:8px}.quick-actions>a>svg{width:16px}.roles-panel{padding-left:22px;padding-right:22px}
 }
+
+/* Photographic backgrounds for the two companion cards. */
+.area-stack>a{position:relative;overflow:hidden;isolation:isolate;color:#fff;background:#173b55}
+.area-stack>a:before,.area-stack>a:after{content:'';position:absolute;inset:0;pointer-events:none}
+.area-stack>a:before{z-index:-2;background-repeat:no-repeat;background-size:cover;transition:transform .35s}
+.area-stack>a:after{z-index:-1;background:linear-gradient(90deg,rgba(12,39,59,.88),rgba(12,39,59,.65))}
+.area-stack>.education-area:before{background-image:url('assets/unesco-cover.webp');background-position:center 42%}
+.area-stack>.recognition-area:before{background-image:url('assets/021.webp');background-size:220% auto;background-position:6% 23%}
+.area-stack>a:hover{background:#173b55}.area-stack>a:hover:before{transform:scale(1.025)}
+.area-stack>a h3{color:#fff}.area-stack>a p{color:#e1edf4}.area-stack>a .area-icon{color:#fff;background:rgba(255,255,255,.16);backdrop-filter:blur(6px)}
+.area-stack>a>svg{color:#e1edf4}
